@@ -1,0 +1,73 @@
+/* style voor alle elementen */
+*
+{
+    margin: 0;
+    padding: 0;
+    border: none;
+    box-sizing: border-box; /* Zorgt ervoor dat alles netjes in een box blijft en niet gaat overlappen */
+} 
+
+/* opmaak voor de body */
+body
+{
+    background-color: #E5E5E5;
+}
+/* Alle articellen in de main */
+main
+{
+    /* background-color: #E5E5E5; LET OP! dit kan de article background color overrulen & is waarschijnlijk overbodig */
+}
+#Header_Hero
+{
+
+}
+#Header_Hero > img
+{
+    width: 100%;
+}
+#Main_StartArticle
+{
+    background-color: #4DB2F9;
+    padding: 1em;
+}
+#Main_Article1 /* Kijk eerst eens of je alles in een grid kan zetten. */
+{
+    background-color: #4DB2F9;
+    padding: 1em;
+    /* width: 25%; */
+    /* height: 25%; */
+
+    border-top-left-radius: 10%;
+    border-bottom-left-radius: 10%;
+    border-top-right-radius: 10%;
+    border-bottom-right-radius: 10%;
+}
+#Main_Article2
+{
+    background-color: #4DB2F9;
+    padding: 1em;
+}
+#Main_Article3
+{
+    background-color: #4DB2F9;
+    padding: 1em;
+}
+#Main_Article4
+{
+    background-color: #4DB2F9;
+    padding: 1em;
+}
+#Main_Article5
+{
+    background-color: #4DB2F9;
+    padding: 1em;
+}
+#Main_Article6
+{
+    background-color: #4DB2F9;
+    padding: 1em;
+}
+
+
+
+
