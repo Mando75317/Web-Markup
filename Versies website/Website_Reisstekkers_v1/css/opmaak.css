@@ -12,6 +12,10 @@ body
 {
     background-color: #E5E5E5;
 }
+nav
+{
+    grid-area: navTag;
+}
 #menu-toggle
 {
     display: none;
@@ -81,10 +85,18 @@ body
 main
 {
     /* background-color: #E5E5E5; LET OP! dit kan de article background color overrulen & is waarschijnlijk overbodig */
+    display: grid;
+    grid-template-columns: auto auto auto auto;
+    grid-gap: 10px;
+}
+main > article
+{
+    text-align: center;
+    padding: 20px 0;
 }
 #Header_Hero
 {
-
+    grid-area: headerHero;
 }
 #Header_Hero > img
 {
@@ -95,6 +107,7 @@ main
 {
     background-color: #4DB2F9;
     padding: 1em;
+    grid-area: mainStartArticleTag;
 }
 #Main_Article1 /* Kijk eerst eens of je alles in een grid kan zetten. */
 {
@@ -107,31 +120,37 @@ main
     /* border-bottom-left-radius: 10%; */
     /* border-top-right-radius: 10%; */
     /* border-bottom-right-radius: 10%; */
+    grid-area: mainArticle1Tag;
 }
 #Main_Article2
 {
     background-color: #4DB2F9;
     padding: 1em;
+    grid-area: mainArticle2Tag;
 }
 #Main_Article3
 {
     background-color: #4DB2F9;
     padding: 1em;
+    grid-area: mainArticle3Tag;
 }
 #Main_Article4
 {
     background-color: #4DB2F9;
     padding: 1em;
+    grid-area: mainArticle4Tag;
 }
 #Main_Article5
 {
     background-color: #4DB2F9;
     padding: 1em;
+    grid-area: mainArticle5Tag;
 }
 #Main_Article6
 {
     background-color: #4DB2F9;
     padding: 1em;
+    grid-area: mainArticle6Tag;
 }
 
 
