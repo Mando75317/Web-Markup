@@ -12,6 +12,71 @@ body
 {
     background-color: #E5E5E5;
 }
+#menu-toggle
+{
+    display: none;
+}
+/* Style the hamburger menu */
+.hamburger
+{
+    position: relative;
+    display: inline-block;
+    width: 30px;
+    height: 20px;
+    cursor: pointer;
+}
+.hamburger span
+{
+    position: absolute;
+    left: 0;
+    right: 0;
+    height: 3px;
+    background-color: #F05D23;
+}
+.hamburger span:nth-child(1)
+{
+    top: 0; /*eerste streepje*/
+}
+.hamburger span:nth-child(2)
+{
+    top: 9px; /* tweede streepje */
+}
+.hamburger span:nth-child(3)
+{
+    bottom: 0; /*derde streepje*/
+}
+.menu
+{
+    display: none;
+    position: absolute;
+    top: 0;
+    right: -300px;
+    width: 300px;
+    height: 100%;
+    background-color: #4DB2F9;
+    color: black;
+}
+.menu ul
+{
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+.menu ul li
+{
+    padding: 10px;
+}
+.menu ul li a
+{
+    color: black;
+    text-decoration: none;
+}
+#menu-toggle:checked ~ .menu
+{
+    left: 0;
+    display: block;
+}
+
 /* Alle articellen in de main */
 main
 {
@@ -24,6 +89,7 @@ main
 #Header_Hero > img
 {
     width: 100%;
+    display: block;
 }
 #Main_StartArticle
 {
@@ -37,10 +103,10 @@ main
     /* width: 25%; */
     /* height: 25%; */
 
-    border-top-left-radius: 10%;
-    border-bottom-left-radius: 10%;
-    border-top-right-radius: 10%;
-    border-bottom-right-radius: 10%;
+    /* border-top-left-radius: 10%; */
+    /* border-bottom-left-radius: 10%; */
+    /* border-top-right-radius: 10%; */
+    /* border-bottom-right-radius: 10%; */
 }
 #Main_Article2
 {
