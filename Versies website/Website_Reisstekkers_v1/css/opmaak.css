@@ -1,158 +1,437 @@
-/* style voor alle elementen */
-*
+/* Media query, MOBILE */
+@media screen and (max-width: 768px)
 {
-    margin: 0;
-    padding: 0;
-    border: none;
-    box-sizing: border-box; /* Zorgt ervoor dat alles netjes in een box blijft en niet gaat overlappen */
-} 
+    /* Dus je moet voor telefoon and pc een apparte body enz.. hebben? */
+    /* style voor alle elementen */
+    *
+    {   
+        margin: 0;
+        padding: 0;
+        border: none;
+        box-sizing: border-box; /* Zorgt ervoor dat alles netjes in een box blijft en niet gaat overlappen */
+    } 
 
-/* opmaak voor de body */
-body
-{
-    background-color: #E5E5E5;
-}
-nav
-{
-    grid-area: navTag;
-}
-#menu-toggle
-{
-    display: none;
-}
-/* Style the hamburger menu */
-.hamburger
-{
-    position: relative;
-    display: inline-block;
-    width: 30px;
-    height: 20px;
-    cursor: pointer;
-}
-.hamburger span
-{
-    position: absolute;
-    left: 0;
-    right: 0;
-    height: 3px;
-    background-color: #F05D23;
-}
-.hamburger span:nth-child(1)
-{
-    top: 0; /*eerste streepje*/
-}
-.hamburger span:nth-child(2)
-{
-    top: 9px; /* tweede streepje */
-}
-.hamburger span:nth-child(3)
-{
-    bottom: 0; /*derde streepje*/
-}
-.menu
-{
-    display: none;
-    position: absolute;
-    top: 0;
-    right: -300px;
-    width: 300px;
-    height: 100%;
-    background-color: #4DB2F9;
-    color: black;
-}
-.menu ul
-{
-    list-style-type: none;
-    padding: 0;
-    margin: 0;
-}
-.menu ul li
-{
-    padding: 10px;
-}
-.menu ul li a
-{
-    color: black;
-    text-decoration: none;
-}
-#menu-toggle:checked ~ .menu
-{
-    left: 0;
-    display: block;
+    /* opmaak voor de body */
+    body
+    {
+        background-color: #E5E5E5;
+    }
+    nav
+    {
+        grid-area: navTag;
+    }
+    #menu-toggle
+    {
+        display: none;
+    }
+    /* Style the hamburger menu */
+    .hamburger
+    {
+        position: relative;
+        display: inline-block;
+        width: 30px;
+        height: 20px;
+        margin: 5px;
+        cursor: pointer;
+    }
+    .hamburger span
+    {
+        position: absolute;
+        left: 0;
+        right: 0;
+        height: 3px;
+        background-color: #F05D23;
+    }
+    .hamburger span:nth-child(1)
+    {
+        top: 0; /*eerste streepje*/
+    }
+    .hamburger span:nth-child(2)
+    {
+        top: 9px; /* tweede streepje */
+    }
+    .hamburger span:nth-child(3)
+    {
+        bottom: 0; /*derde streepje*/
+    }
+    .menu
+    {
+        display: none;
+        position: absolute;
+        top: 0;
+        right: -300px;
+        width: 300px;
+        height: 100%;
+        background-color: #4DB2F9;
+        color: black;
+    }
+    .menu ul
+    {
+        list-style-type: none;
+        padding: 0;
+        margin: 0;
+    }
+    .menu ul li
+    {
+        padding: 10px;
+    }
+    .menu ul li a
+    {
+        color: black;
+        text-decoration: none;
+    }
+    #menu-toggle:checked ~ .menu
+    {
+        left: 0;
+        display: block;
+    }
+
+    /* Alle articellen in de main */
+    main
+    {
+        /* background-color: #E5E5E5; LET OP! dit kan de article background color overrulen & is waarschijnlijk overbodig */
+        padding: 10px;
+        display: grid;
+        /* de articelen zijn opgestapeld? */
+        /* grid-template-columns: auto auto auto auto; */
+        grid-gap: 10px;
+
+        /* waarom gaan mijn articelen achter elkaar zitten? */
+        grid-template-areas: 
+            'mainStartArticleTag mainStartArticleTag mainStartArticleTag'
+            'mainArticle1Tag mainArticle2Tag mainArticle3Tag '
+            'mainArticle4Tag mainArticle4Tag mainArticle4Tag'
+            'mainArticle5Tag mainArticle6Tag '
+        ;
+        
+        
+    }
+    main > article
+    {
+        text-align: center;
+        padding: 20px 0;
+        font-size: 30px;
+    }
+    #Header_Hero
+    {
+        grid-area: headerHero;
+    }
+    #Header_Hero > img
+    {
+        width: 100%;
+        display: block;
+    }
+    #Main_StartArticle
+    {
+        background-color: #4DB2F9;
+        padding: 1em;
+        grid-area: mainStartArticleTag;
+        grid-column: 1/4;
+    }
+    #Main_Article1 /* Kijk eerst eens of je alles in een grid kan zetten. */
+    {
+        background-color: #4DB2F9;
+        padding: 1em;
+        /* width: 25%; */
+        /* height: 25%; */
+
+        /* border-top-left-radius: 10%; */
+        /* border-bottom-left-radius: 10%; */
+        /* border-top-right-radius: 10%; */
+        /* border-bottom-right-radius: 10%; */
+        grid-area: mainArticle1Tag;
+        
+    }
+    #Main_Article2
+    {
+        background-color: #4DB2F9;
+        padding: 1em;
+        grid-area: mainArticle2Tag;
+    }
+    #Main_Article3
+    {
+        background-color: #4DB2F9;
+        padding: 1em;
+        grid-area: mainArticle3Tag;
+    }
+    #Main_Article4
+    {
+        background-color: #4DB2F9;
+        padding: 1em;
+        grid-area: mainArticle4Tag;
+    }
+    #Main_Article5
+    {
+        background-color: #4DB2F9;
+        padding: 1em;
+        grid-area: mainArticle5Tag;
+    }
+    #Main_Article6
+    {
+        background-color: #4DB2F9;
+        padding: 1em;
+        grid-area: mainArticle6Tag;
+    }
+
+
+
 }
 
-/* Alle articellen in de main */
-main
+/* Media query, PC ------------------------------------------------------------------------------------------------------------------------*/
+@media screen and (min-width: 769px)
 {
-    /* background-color: #E5E5E5; LET OP! dit kan de article background color overrulen & is waarschijnlijk overbodig */
-    display: grid;
-    grid-template-columns: auto auto auto auto;
-    grid-gap: 10px;
-}
-main > article
-{
-    text-align: center;
-    padding: 20px 0;
-}
-#Header_Hero
-{
-    grid-area: headerHero;
-}
-#Header_Hero > img
-{
-    width: 100%;
-    display: block;
-}
-#Main_StartArticle
-{
-    background-color: #4DB2F9;
-    padding: 1em;
-    grid-area: mainStartArticleTag;
-}
-#Main_Article1 /* Kijk eerst eens of je alles in een grid kan zetten. */
-{
-    background-color: #4DB2F9;
-    padding: 1em;
-    /* width: 25%; */
-    /* height: 25%; */
+    *
+    {   
+        margin: 0;
+        padding: 0;
+        border: none;
+        box-sizing: border-box; /* Zorgt ervoor dat alles netjes in een box blijft en niet gaat overlappen */
+    } 
 
-    /* border-top-left-radius: 10%; */
-    /* border-bottom-left-radius: 10%; */
-    /* border-top-right-radius: 10%; */
-    /* border-bottom-right-radius: 10%; */
-    grid-area: mainArticle1Tag;
-}
-#Main_Article2
-{
-    background-color: #4DB2F9;
-    padding: 1em;
-    grid-area: mainArticle2Tag;
-}
-#Main_Article3
-{
-    background-color: #4DB2F9;
-    padding: 1em;
-    grid-area: mainArticle3Tag;
-}
-#Main_Article4
-{
-    background-color: #4DB2F9;
-    padding: 1em;
-    grid-area: mainArticle4Tag;
-}
-#Main_Article5
-{
-    background-color: #4DB2F9;
-    padding: 1em;
-    grid-area: mainArticle5Tag;
-}
-#Main_Article6
-{
-    background-color: #4DB2F9;
-    padding: 1em;
-    grid-area: mainArticle6Tag;
-}
+    /* opmaak voor de body */
+    body
+    {
+        background-color: #E5E5E5;
+    }
+    body > a
+    {
+        display: block;
+        height: 30%;
+        width: 30%;
+    }
+    .current
+    {
+        background-color: #0B93F2;
+        border-top-left-radius: 15%;
+        border-bottom-left-radius: 15%;
+        border-top-right-radius: 15%;
+        border-bottom-right-radius: 15%;
+    }
+    nav > a > img 
+    {
+        width: 60px;
+        height: 60px;
+    }
+    nav
+    {
+        grid-area: navTag;
+    }
+    #menu-toggle
+    {
+        display: none;
+    }
+    /* navigatie menu */
+    nav > ul > li
+    {
+        text-align: center;
+        padding: 20px 0;
+    }
+    /* namen voor de gridbox van de navbalk */
+    #navBalkImg
+    {
+        grid-area: navIMG;
+        display: block;
+        
+    }
+    #navLinks
+    {
+        grid-area: navLink;
+        text-align: center;
 
+        align-content: space-around;
+    }
+    #li1
+    {
+        grid-area: li1;
+    }
+    #li2
+    {
+        grid-area: li2;
+    }
+    #li3
+    {
+        grid-area: li3;
+    }
+    #li4
+    {
+        grid-area: li4;
+    }
+    #li5
+    {
+        grid-area: li5;
+    }
+    #li6
+    {
+        grid-area: li6;
+        background-color: #F05D23;
+        border-top-left-radius: 15%;
+        border-bottom-left-radius: 15%;
+        border-top-right-radius: 15%;
+        border-bottom-right-radius: 15%;
+    }
+    #navLinks
+    {
+        padding: 10px;
+        display: grid;
+        
+        grid-template-areas: 
+        'li1    li2     li3     li4     li5     li6     ';
+    }
+    .menu
+    {
+        background-color: #4DB2F9;
+        color: black;
+        padding: 10px;
+        display: grid;
+        
+        grid-template-areas: 
+        'navIMG     navLink     ';
+    }
+    /* Dit is allemaal uit als je op de pc versie gebruikt */
+    .hamburger
+    {
+        display: none;
+    }
+    .hamburger span
+    {
+        display: none;
+    }
+    .menu ul
+    {
+        list-style-type: none;
+        padding: 0;
+        margin: 0;
+    }
+    .menu ul li
+    {
+        padding: 10px;
+    }
+    .menu ul li a
+    {
+        color: black;
+        text-decoration: none;
+    }
+    #menu-toggle:checked ~ .menu
+    {
+        left: 0;
+        display: block;
+    }
 
+    /* Alle articellen in de main */  
+    main > article
+    {
+        text-align: center;
+        padding: 20px 0;
+        font-size: 30px;
+    }
+    #Header_Hero
+    {
+        grid-area: headerHero;
+    }
+    #Header_Hero > img
+    {
+        width: 100%;
+        display: block;
+    }
+    #Main_StartArticle
+    {
+        background-color: #4DB2F9;
+        padding: 1em;
+        grid-area: mainStartArticleTag;
+    }
+    #Main_Article1
+    {
+        background-color: #4DB2F9;
+        padding: 1em;
+        grid-area: mainArticle1Tag;
+        border-top-left-radius: 10%;
+        border-bottom-left-radius: 10%;
+        border-top-right-radius: 10%;
+        border-bottom-right-radius: 10%;      
+    }
+    #Main_Article2
+    {
+        background-color: #4DB2F9;
+        padding: 1em;
+        grid-area: mainArticle2Tag;
+    }
+    #Main_Article3
+    {
+        background-color: #4DB2F9;
+        padding: 1em;
+        grid-area: mainArticle3Tag;
+    }
+    #Main_Article4
+    {
+        background-color: #4DB2F9;
+        padding: 1em;
+        grid-area: mainArticle4Tag;
+    }
+    #Main_Article5
+    {
+        background-color: #4DB2F9;
+        padding: 1em;
+        grid-area: mainArticle5Tag;
+    }
+    #Main_Article6
+    {
+        background-color: #4DB2F9;
+        padding: 1em;
+        grid-area: mainArticle6Tag;
+    }
+    #Main_Article7
+    {
+        background-color: #4DB2F9;
+        padding: 1em;
+        grid-area: mainArticle7Tag;
+    }
+    #Main_Article8
+    {
+        background-color: #4DB2F9;
+        padding: 1em;
+        grid-area: mainArticle8Tag;
+    }
+    #Main_Article9
+    {
+        background-color: #4DB2F9;
+        padding: 1em;
+        grid-area: mainArticle9Tag;
+    }
+    #Main_Article10
+    {
+        background-color: #4DB2F9;
+        padding: 1em;
+        grid-area: mainArticle10Tag;
+    }
+    #Main_Article11
+    {
+        background-color: #4DB2F9;
+        padding: 1em;
+        grid-area: mainArticle11Tag;
+    }
+    #Main_Article12
+    {
+        background-color: #4DB2F9;
+        padding: 1em;
+        grid-area: mainArticle12Tag;
+    }
 
+    main
+    {
+        padding: 0px 10px 10px 10px;
+        display: grid;
+
+        grid-gap: 10px;
+
+        grid-template-areas: 
+            'mainStartArticleTag      mainStartArticleTag       mainStartArticleTag    '
+            'mainArticle1Tag          mainArticle2Tag           mainArticle3Tag    '
+            'mainArticle4Tag          mainArticle4Tag           mainArticle4Tag    '
+            'mainArticle5Tag          mainArticle6Tag           mainArticle7Tag'
+            'mainArticle8Tag          mainArticle9Tag           mainArticle10Tag'
+            'mainArticle11Tag          mainArticle11Tag           mainArticle11Tag'
+            'mainArticle11Tag          mainArticle11Tag           mainArticle11Tag'
+            'mainArticle12Tag          mainArticle12Tag           mainArticle12Tag';
+    }
+}
 
