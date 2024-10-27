@@ -9,22 +9,26 @@
 
     <meta name="author" content="Bas Raadsveld"/>
 
-    <title>Reisstekkers</title>
+    <title>StekkerGids Contact</title>
 </head>
 
 <body>
     <input type="checkbox" id="menu-toggle">
-    <label for="menu-toggle" class="hamburger">
-        <!--3 hamburger-->
-        <span></span>
-        <span></span>
-        <span></span>
-    </label>
-    <!--this the the menu that will show when clicked-->
+    <section class="navBalkMobile"><!-- voor de navbalk op mobile -->
+        <a href="../Website_Reisstekkers_v1/index.html" id="navBalkImg">    
+            <img src="img/Logo_Kleur.png" alt="Hero_image" title="Hero van de website, met twee stekker op de afbeelding.">
+        </a>
+        <label for="menu-toggle" class="hamburger">
+            <!--3 hamburger-->
+            <span></span>
+            <span></span>
+            <span></span>
+        </label>
+    </section>
 
+    <!--this the the menu that will show when clicked-->
     <nav class="menu">
-        <!-- logo hier -->
-        <a href="#" id="navBalkImg">    
+        <a href="../Website_Reisstekkers_v1/index.html" id="navBalkImg">    
             <img src="img/Logo_Kleur.png" alt="Hero_image" title="Hero van de website, met twee stekker op de afbeelding.">
         </a>
         <ul id="navLinks">
@@ -37,48 +41,83 @@
         </ul>
     </nav>
 
-    <header>
-        <h1>
-            Get in touch
-        </h1>
+    <header id="HeroContact">
+        <img src="img/header_home.jpg"  title="Info afbeelding " alt="Afbeelding van 2 stekkers met het woord info er tussen"/>
+        <h1 class="HeroContactH1"><em>Mocht je nog vragen hebben stel ze dan hier</em></h1>
     </header>
+    
+    <main id="ContactGridContainer">
+        <!-- Links van het formulier -->
+        <aside id="AsideContact">
+            <img src="img/ContactHorizontaal.jpg"  title="ContactAfbeelding" alt="Afbeelding met alle type stopcontacten erop."/>
+            <h3>Meer info?</h3>
+            <p id="ContactP1">Of je nu reist voor werk of vakantie, wij zorgen ervoor dat je altijd goed voorbereid op pad gaat.</p>
+            <p id="ContactP2">Heb je vragen over welke reisstekker je nodig hebt voor jouw volgende bestemming, of wil je meer informatie over 
+                de verschillende stopcontacten wereldwijd? Wij helpen je graag verder! Neem gerust contact met ons op voor persoonlijk 
+                advies of handige tips. Vul het contactformulier in, en we nemen zo snel mogelijk contact met je op.
+            </p>
+        </aside>
+        <!-- Midden vd pagina -->
+        <form 
+            action="vote.php"
+            method="post"
+            id="ContactForm"
+            >
+            
+            <ul id="aanhef">
+                <li>
+                    <label for="aanhef">Aanhef*</label>
+                </li>
+                <li>
+                    <select name="aanhef">
+                        <option value="geen">geen</option>
+                        <option value="dhr">Dhr.</option>
+                        <option value="mevr">Mevr.</option>
+                    </select>
+                </li>
+            </ul>
 
-    <form 
-        action="vote.php"
-        method="post"
-        >
-        
-        <label for="name">
-            Enter your name*
-        </label>
-        <input type="text" placeholder="Enter your name here" name="Name" id="name">
-        
-        <label for="email">
-            Enter your email*
-        </label>
-        <input type="email" placeholder="Enter your email" name="email" id="email">
+            <label for="name" id="naam">
+                Voornaam*
+            </label>
+            <input type="text" placeholder="Vul hier je naam in" name="Name" id="naam2"/>
+            
+            <label for="achternaam" id="achternaam">
+                Achternaam
+            </label>
+            <input type="text" placeholder="Vul hier je achternaam in" name="email" id="achternaam2"/>
 
-        <label for="website">
-            Your website
-        </label>
-        <input type="website" placeholder="https://" name="website" id="website">
+            <label for="email" id="website">
+                Email*
+            </label>
+            <input type="email" placeholder="voorbeeld@gmail.com" name="website" id="website2"/>
 
-        <label for="vraag">
-            Vraag
-        </label>
-        <input type="text" placeholder="Vraag jouw vraag" name="vraag" id="vraag">
-        
+            <label for="telefoonnummer" id="telefoonnummer">
+                telefoonnummer
+            </label>
+            <input type="number" placeholder="06-12345678" name="nummer" id="telefoonnummer2"/>
 
+            <label for="vraag" id="vraag">
+                Vraag*
+            </label>
+            <input type="text" placeholder="Stel je vraag" name="vraag" id="vraag2"/>
 
-    </form>
+            <input type="submit" value="Verstuur" id="verstuur">
+        </form>
+
+        <!-- Links van het formulier -->
+        <article id="ContactArticle">
+            <img src="img/ConctactVerticaal.jpg"  title="ContactAfbeelding" alt="Afbeelding met vraagtekens, een brief en een vinkje"/>
+        </article>
+    </main>
 
     <footer>
         <!-- Links -->
-        <img src="img/footer_contact.png"  title="Footer Brief" alt="Afbeelding van een brief." id="FooterIMG1"/>
-        <p id="FooterP1">
-            Stel nu al je vragen via ons makkelijke formulier.
-        </p> 
-        <!-- Mideen -->
+        <figure>
+            <img src="img/footer_contact.png"  title="Footer Brief" alt="Afbeelding van een brief." id="FooterIMG1"/>
+            <figcaption id="FooterP1">Stel nu al je vragen via ons makkelijke formulier.</figcaption>
+        </figure>
+        <!-- Midden -->
         <p id="FooterP2">
             Copyright &copy; 2024 &#45; StekkerGids <!-- &#45; = minnetje -->
         </p>
