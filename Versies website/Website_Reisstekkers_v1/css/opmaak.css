@@ -1,9 +1,10 @@
+/* font */
+@import url('https://fonts.googleapis.com/css2?family=Rowdies:wght@300;400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Fredoka:wght@300..700&family=Rowdies:wght@300;400;700&display=swap');
+
 /* Media query, MOBILE */
 @media screen and (max-width: 768px)
 {
-    /* font */
-    @import url('https://fonts.googleapis.com/css2?family=Rowdies:wght@300;400;700&display=swap');
-    @import url('https://fonts.googleapis.com/css2?family=Fredoka:wght@300..700&family=Rowdies:wght@300;400;700&display=swap');
     /* style voor alle elementen */
     *
     {   
@@ -88,7 +89,7 @@
         height: 100%;
         background-color: #cadbe7;
     }
-    .menu #navBalkImg
+    .menu .navBalkImg
     {
         display: none;
     }
@@ -757,11 +758,11 @@
         border-top-right-radius: 5%;
         border-bottom-right-radius: 5%;
     }
-    .knop :hover
+    .knop:hover
     {
-        background-color: #ed4909;
+        background-color: #f8cdbc;
     }
-    .knop :visited
+    .knop:visited
     {
         background-color: #F05D23;  
     }
@@ -806,13 +807,15 @@
     {
         grid-area: asideP1;
         width: 70%;
-        font-family: "Fredoka", sans-serif;
     }
     #AsideContact > #ContactP2
     {
         grid-area: asideP2;
         width: 80%;
         padding: 15px;
+    }
+    #AsideContact > #ContactP1,  #AsideContact > #ContactP2
+    {
         font-family: "Fredoka", sans-serif;
     }
     #AsideContact
@@ -1000,9 +1003,6 @@
 /* Media query, PC ------------------------------------------------------------------------------------------------------------------------*/
 @media screen and (min-width: 769px)
 {
-    /* font */
-    @import url('https://fonts.googleapis.com/css2?family=Rowdies:wght@300;400;700&display=swap');
-    @import url('https://fonts.googleapis.com/css2?family=Fredoka:wght@300..700&family=Rowdies:wght@300;400;700&display=swap');
     *
     {   
         margin: 0;
@@ -1055,7 +1055,7 @@
         font-family: "Fredoka", sans-serif;
     }
     /* namen voor de gridbox van de navbalk */
-    #navBalkImg
+    .navBalkImg
     {
         grid-area: navIMG;
         display: block;
@@ -1217,7 +1217,6 @@
     {
         padding: 10px;
         text-align: left;
-        size: 20%;
         font-size: 32px;
         font-family: "Rowdies", sans-serif;
         grid-area: Mainh1Tag;
@@ -1675,13 +1674,9 @@
 
         grid-template-areas: 
             'Article9h3      Article9IMG    '
-            'Article9P       Article9IMG     '; 
+            'Article9P       Article9IMG    '; 
     }
-    main > article > h1
-    {
-        font-family: "Rowdies", sans-serif; 
-    }
-    main > article > h3
+    main > article > h1, main > article > h3
     {
         font-family: "Rowdies", sans-serif; 
     }
@@ -1718,11 +1713,11 @@
         border-top-right-radius: 5%;
         border-bottom-right-radius: 5%;
     }
-    .knop :hover
+    .knop:hover
     {
         background-color: #f8cdbc;
     }
-    .knop :visited
+    .knop:visited
     {
         background-color: #F05D23;  
     }
