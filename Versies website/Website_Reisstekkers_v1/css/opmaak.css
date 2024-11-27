@@ -1802,6 +1802,7 @@
     {
         list-style: none;
         font-family: "Fredoka", sans-serif;
+        padding: 5px;
     }
     #naam
     {
@@ -1812,6 +1813,7 @@
     {
         grid-area: formNaam2;
         font-family: "Fredoka", sans-serif;
+        padding: 5px;
     }
     #naam > label
     {
@@ -1827,6 +1829,7 @@
     {
         grid-area: formAchternaam2;
         font-family: "Fredoka", sans-serif;
+        padding: 5px;
     }
     #website
     {
@@ -1837,6 +1840,7 @@
     {
         grid-area: formWebsite2;
         font-family: "Fredoka", sans-serif;
+        padding: 5px;
     }
     #telefoonnummer
     {
@@ -1847,6 +1851,7 @@
     {
         grid-area: formTelefoonnummer2;
         font-family: "Fredoka", sans-serif;
+        padding: 5px;
     }
     #vraag
     {
@@ -1857,6 +1862,7 @@
     {
         grid-area: formVraag2;
         font-family: "Fredoka", sans-serif;
+        padding: 5px;
     }
     #verstuur
     {
@@ -1866,13 +1872,14 @@
     }
     #ContactForm
     {
-        padding: 15px;
+        padding: 50px;
         background-color: #7ac2f4;
         height: 90%;
-        border-top-left-radius: 7%;
+        border-radius: 7%;
+        /* border-top-left-radius: 7%;
         border-bottom-left-radius: 7%;
         border-top-right-radius: 7%;
-        border-bottom-right-radius: 7%;
+        border-bottom-right-radius: 7%; */
 
         grid-area: contactForm;
         display: grid;
