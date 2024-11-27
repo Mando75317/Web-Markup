@@ -1,0 +1,1956 @@
+/* font */
+@import url('https://fonts.googleapis.com/css2?family=Rowdies:wght@300;400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Fredoka:wght@300..700&family=Rowdies:wght@300;400;700&display=swap');
+
+/* Media query, MOBILE */
+@media screen and (max-width: 768px)
+{
+    /* style voor alle elementen */
+    *
+    {   
+        margin: 0;
+        padding: 0;
+        border: none;
+        box-sizing: border-box; /* Zorgt ervoor dat alles netjes in een box blijft en niet gaat overlappen */
+    } 
+
+    /* opmaak voor de body */
+    body
+    {
+        background-color: #E5E5E5;
+    }
+    /* Section voor navBalk */
+    .navBalkMobile
+    {
+        background-color: #CADBE7;
+        height: 50px;
+    }
+    .navBalkMobile a
+    {
+        text-decoration: none;
+    }
+    .navBalkMobile a img
+    {
+        width: 7%;
+        padding: 10px;
+        position: relative;
+        left: 80%;
+    }
+    /* einde Section voor navBalk */
+
+    /* Hamburger menu */
+    nav
+    {
+        grid-area: navTag;
+    }
+    #menu-toggle
+    {
+        display: none;
+    }
+    
+    /* Style the hamburger menu */
+    .navBalkMobile > .hamburger
+    {
+        position: relative;
+        display: inline-block;
+        width: 30px;
+        height: 20px;
+        margin: 5px;
+        cursor: pointer;
+        right: 45px;
+    }
+    .hamburger span
+    {
+        position: absolute;
+        left: 0;
+        right: 0;
+        height: 3px;
+        background-color: #F05D23;
+    }
+    .hamburger span:nth-child(1)
+    {
+        top: 0; /*eerste streepje*/
+    }
+    .hamburger span:nth-child(2)
+    {
+        top: 9px; /* tweede streepje */
+    }
+    .hamburger span:nth-child(3)
+    {
+        bottom: 0; /*derde streepje*/
+    }
+    .menu
+    {
+        display: none;
+        position: absolute;
+        top: 0;
+        right: -300px;
+        width: 300px;
+        height: 100%;
+        background-color: #cadbe7;
+    }
+    .menu .navBalkImg
+    {
+        display: none;
+    }
+    .menu ul
+    {
+        list-style-type: none;
+        padding: 0;
+        margin: 0;
+    }
+    .menu ul li
+    {
+        padding: 10px;
+    }
+    .menu ul li a
+    {
+        color: #061826;
+        text-decoration: none;
+    }
+    #menu-toggle:checked ~ .menu
+    {
+        left: 0;
+        display: block;
+    }
+    /* Einde hamburger menu */
+
+    /* Hero */
+    #Header_Hero > p
+    {
+        position: absolute;
+        left: 50%;
+        transform: translateX(-50%);
+        color: #061826; 
+        text-align: center;
+        font-weight: bold;
+    }
+    .hero-title
+    {
+        font-family: "Rowdies", sans-serif;
+        font-weight: 400;      
+        top: 30%;
+        font-size: 36px;
+        text-transform: uppercase;
+        font-family: "Rowdies", sans-serif;
+    }
+    .hero-subtitle
+    {
+        font-family: "Rowdies", sans-serif;
+        font-weight: 400;      
+        top: 40%;
+        font-size: 24px;
+    }
+    #Header_Hero > img
+    {
+        width: 100%;
+        display: block;
+    }
+    #Header_Hero
+    {
+        grid-area: headerHero;
+        border-bottom: solid 8px #cadbe7;
+    }
+
+    /*Home Page * * * * * * * * */
+    main > article
+    {
+        text-align: center;
+        padding: 20px 0;
+        font-size: 30px;
+    }
+    
+    #Main_StartArticle
+    {
+        background-color: #4DB2F9;
+        padding: 1em;
+        grid-area: mainStartArticleTag;
+    }
+    #Main_StartArticle > P
+    {
+        padding: 7px;
+        font-size: 20px;
+        font-family: "Fredoka", sans-serif;
+    }
+    #Main_StartArticle > img
+    {
+        width: 90%;
+        margin: 10px;
+    }
+    main Article h1
+    {
+        font-family: "Rowdies", sans-serif;
+    }
+    main Article h3
+    {
+        font-family: "Rowdies", sans-serif;
+    }
+    main Article p
+    {
+        font-family: "Fredoka", sans-serif;
+    }
+    #Main_Article1
+    {
+        background-color: #f2f2f2;
+        border: solid 4px #264653;
+        padding: 1em;
+        grid-area: mainArticle1Tag;
+        
+    }
+    #Main_Article2
+    {
+        background-color: #f2f2f2;
+        border: solid 4px #264653;
+        padding: 1em;
+        grid-area: mainArticle2Tag;
+    }
+    #Main_Article3
+    {
+        background-color: #f2f2f2;
+        border: solid 4px #264653;
+        padding: 1em;
+        grid-area: mainArticle3Tag;
+    }
+    #Main_Article4
+    {
+        background-color: #4DB2F9;
+        padding: 1em;
+        grid-area: mainArticle4Tag;
+    }
+    #Main_Article5
+    {
+        background-color: #f2f2f2;
+        border: solid 4px #264653;
+        padding: 1em;
+        grid-area: mainArticle5Tag;
+    }
+    #Main_Article6
+    {
+        background-color: #f2f2f2;
+        border: solid 4px #264653;
+        padding: 1em;
+        grid-area: mainArticle6Tag;
+    }
+    #Main_Article7
+    {
+        background-color: #f2f2f2;
+        border: solid 4px #264653;
+        padding: 1em;
+        grid-area: mainArticle6Tag;
+    }
+    main
+    {
+        padding: 10px;
+        display: grid;
+        grid-gap: 10px;
+
+        grid-template-areas: 
+            'mainStartArticleTag'
+            'mainArticle1Tag'
+            'mainArticle2Tag'
+            'mainArticle3Tag'
+            'mainArticle4Tag'
+            'mainArticle5Tag'
+            'mainArticle6Tag'
+            'mainArticle7Tag'
+            'mainArticle8Tag'
+            'mainArticle9Tag';
+    }
+    /* Einde Home Page * * * * * * * * */
+
+    /* Detail pages */
+    .startArticle > h3
+    {
+        font-size: 32px;
+        text-align: left;
+        grid-area: h3startTag;
+    }
+    .startArticle > p
+    {
+        font-size: 20px;
+        text-align: left;
+        width: 80%;
+        grid-area: PstartTag;
+    }
+    .startArticle > img
+    {
+        width: 80%;
+        grid-area: IMGstartTag;
+    }
+    .startArticle
+    {
+        padding: 1em;
+        grid-area: mainStartArticleTag;
+        border: none;
+    
+        display: grid;
+        grid-gap: 10px;
+        justify-content: center;
+    
+        grid-template-areas: 
+            'IMGstartTag'
+            'h3startTag'
+            'PstartTag';
+    }
+    main > article
+    {
+        border-top-left-radius: 5%;
+        border-bottom-left-radius: 5%;
+        border-top-right-radius: 5%;
+        border-bottom-right-radius: 5%;
+    }
+    main > article > img
+    {
+        border: solid 4px #cadbe7;
+    }
+    /* articelen */
+    #article1
+    {
+        grid-area: article1Tag;
+        border: solid 4px #264653; 
+    }
+    #article2
+    {
+        grid-area: article2Tag;
+        border: solid 4px #264653; 
+    }
+    #article3
+    {
+        grid-area: article3Tag;
+        border: solid 4px #264653; 
+    }
+    #article4
+    {
+        grid-area: article4Tag;
+        border: solid 4px #264653; 
+    }
+    .Mongolie > img
+    {
+        width: 60%;
+    }
+    .Mexico > img
+    {
+        width: 60%;
+    }
+    #article5
+    {
+        grid-area: article5Tag;
+        border: solid 4px #264653; 
+    }
+    #article6
+    {
+        grid-area: article6Tag;
+        border: solid 4px #264653; 
+    }
+    #article7
+    {
+        grid-area: article7Tag;
+        border: solid 4px #264653; 
+    }
+    #article8
+    {
+        grid-area: article8Tag;
+        border: solid 4px #264653; 
+    }
+    .Barbuda > img
+    {
+        width: 60%;
+    }
+    #article9
+    {
+        grid-area: article9Tag;
+        border: solid 4px #264653; 
+    }
+    #article10
+    {
+        grid-area: article10Tag;
+        border: solid 4px #264653; 
+    }
+    #article11
+    {
+        grid-area: article11Tag;
+        border: solid 4px #264653; 
+    }
+    #article12
+    {
+        grid-area: article12Tag;
+        border: solid 4px #264653; 
+    }
+    #article13
+    {
+        grid-area: article13Tag;
+        border: solid 4px #264653; 
+    }
+    #articleBuffer
+    {
+        display: none;
+    }
+    .gridContainerDetail > article
+    {
+        background-color: #4DB2F9;
+        border: solid 4px #264653; 
+    }
+    .gridContainerDetail article h3
+    {
+        font-family: "Rowdies", sans-serif;
+    }
+    .gridContainerDetail article p
+    {
+        font-family: "Fredoka", sans-serif;
+    }
+    .gridContainerDetail
+    {
+        padding: 10px;
+        display: grid;
+    
+        grid-gap: 20px;
+        grid-template-areas: 
+            'mainStartArticleTag'
+            'article1Tag'
+            'article2Tag'
+            'article3Tag'
+            'article4Tag'
+            'article5Tag'
+            'article6Tag'
+            'article7Tag'
+            'article8Tag'
+            'article9Tag'
+            'article10Tag'
+            'article11Tag'
+            'article12Tag'
+            'article13Tag';
+    }
+    /* tussen article */
+    .tussenArticle > img
+    {
+        grid-area: tussenIMGTag;
+    }
+    .tussenArticle > h3
+    {
+        grid-area: tussenH3Tag;
+        font-size: 32px;
+    }
+    .tussenArticle > p
+    {
+        grid-area: tussenPTag;
+        width: 85%;
+        padding: 10px;
+    }
+    .tussenArticle
+    {
+        background-color: #4DB2F9;
+        padding: 1em;
+        text-align: left; 
+        font-size: 20px;
+            
+        grid-area: tussenArticleTag;
+        display: grid;
+        grid-gap: 10px;
+        grid-template-areas: 
+            'tussenIMGTag'
+            'tussenH3Tag'
+            'tussenPTag'; 
+    }
+    #article14
+    {
+        grid-area: article14Tag;
+        border: solid 4px #264653; 
+    }
+    .Ecuador > img
+    {
+        width: 60%;
+    }
+    #article15
+    {
+        grid-area: article15Tag;
+        border: solid 4px #264653; 
+    }
+    #article16
+    {
+        grid-area: article16Tag;
+        border: solid 4px #264653; 
+    }
+    #article17
+    {
+        grid-area: article17Tag;
+        border: solid 4px #264653; 
+    }
+    #article18
+    {
+        grid-area: article18Tag;
+        border: solid 4px #264653; 
+    }
+    .Suriname > img
+    {
+        width: 60%;
+    }
+    #article19
+    {
+        grid-area: article19Tag;
+        border: solid 4px #264653; 
+    }
+    #article20
+    {
+        grid-area: article20Tag;
+        border: solid 4px #264653; 
+    }
+    #articleBuffer2
+    {
+        display: none;
+    }
+    /* Voor de azie oceanie page */
+    .gridContainerDetail3 > article
+    {
+        background-color: #4DB2F9;
+    }
+    .gridContainerDetail3 article h3
+    {
+        font-family: "Rowdies", sans-serif;
+    }
+    .gridContainerDetail3 article p
+    {
+        font-family: "Fredoka", sans-serif;
+    }
+    .gridContainerDetail3
+    {
+        padding: 10px;
+        display: grid;
+    
+        grid-gap: 20px;
+        grid-template-areas: 
+            'mainStartArticleTag'
+            'article1Tag'
+            'article2Tag'
+            'article3Tag'
+            'article4Tag'
+            'article5Tag'
+            'article6Tag'
+            'article7Tag'
+            'article8Tag'
+            'article9Tag'
+            'article10Tag'
+            'article11Tag'
+            'article12Tag'
+            'tussenArticleTag'
+            'article13Tag'
+            'article14Tag'
+            'article15Tag'
+            'article16Tag';
+    }
+    /* Dit is voor Amerika page */
+    .gridContainerDetail2 > article
+    {
+        background-color: #4DB2F9;
+    }
+    .gridContainerDetail2 article h3
+    {
+        font-family: "Rowdies", sans-serif;
+    }
+    .gridContainerDetail2 article p
+    {
+        font-family: "Fredoka", sans-serif;
+    }
+    .gridContainerDetail2
+    {
+        padding: 10px;
+        display: grid;
+    
+        grid-gap: 20px;
+        grid-template-areas: 
+            'mainStartArticleTag'
+            'article1Tag'
+            'article2Tag'
+            'article3Tag'
+            'article4Tag'
+            'article5Tag'
+            'article6Tag'
+            'article7Tag'
+            'article8Tag'
+            'article9Tag'
+            'article10Tag'
+            'tussenArticleTag'
+            'article11Tag'
+            'article12Tag'
+            'article13Tag'
+            'article14Tag'
+            'article15Tag'
+            'article16Tag'
+            'article17Tag'
+            'article18Tag'
+            'article19Tag'
+            'article20Tag';
+    }
+    #Main_Article2
+    {
+        padding: 1em;
+        grid-area: mainArticle2Tag;
+    }
+    /* article 3 */
+    #Main_Article3
+    {
+        padding: 1em;
+        grid-area: mainArticle3Tag;
+    }
+    /* Article 4 */
+    #Main_Article4 > img
+    {
+        grid-area: Article4IMG;
+    }
+    #Main_Article4 > h3
+    {
+        grid-area: Article4h3;
+        font-size: 32px;
+    }
+    #Main_Article4 > p
+    {
+        grid-area: Article4P;
+        width: 85%;
+        padding: 10px;
+    }
+    #Main_Article4
+    {
+        background-color: #4DB2F9;
+        padding: 1em;
+        text-align: left; 
+        justify-items: center;
+        font-size: 20px;
+        
+        grid-area: mainArticle4Tag;
+        display: grid;
+        grid-gap: 10px;
+
+        grid-template-areas:
+            'Article4h3 '
+            'Article4P  '
+            'Article4IMG'; 
+    }
+    #Main_Article5
+    {
+        padding: 1em;
+        grid-area: mainArticle5Tag;
+    }
+    #Main_Article6
+    {
+        padding: 1em;
+        grid-area: mainArticle6Tag;
+    }
+    #Main_Article7
+    {
+        padding: 1em;
+        grid-area: mainArticle7Tag;
+    }
+    /* Article 8 */
+    #Main_Article8 > img
+    {
+        grid-area: Article8IMG;
+        margin: 30px;
+    }
+    #Main_Article8 > h3
+    {
+        grid-area: Article8h3;
+        font-size: 32px;
+        text-align: left;
+        font-family: "Rowdies", sans-serif;
+    }
+    #Main_Article8 > p
+    {
+        grid-area: Article8P;
+        padding: 10px;
+        text-align: left;
+        font-size: 20px;
+        width: 80%;
+        font-family: "Fredoka", sans-serif;
+    }
+    #Main_Article8
+    {
+        background-color: #4DB2F9;
+        padding: 1em;
+        justify-items: center;
+        grid-area: mainArticle8Tag;
+
+        display: grid;
+        grid-gap: 10px;
+
+        grid-template-areas:
+            'Article8IMG'
+            'Article8h3 '
+            'Article8P  ';
+    }
+    /* Article 9 */
+    #Main_Article9 > img
+    {
+        grid-area: Article9IMG;
+    }
+    #Main_Article9 > h3
+    {
+        grid-area: Article9h3;
+        font-size: 32px;
+        text-align: left;
+        font-family: "Rowdies", sans-serif;
+
+    }
+    #Main_Article9 > #Article9P
+    {
+        grid-area: Article9P;
+        padding: 10px;
+        text-align: left;
+        font-size: 20px;
+        font-family: "Fredoka", sans-serif;
+    }
+    #Main_Article9
+    {
+        background-color: #4DB2F9;
+        padding: 1em;
+
+        grid-area: mainArticle9Tag;
+        justify-items: center;
+        display: grid;
+        grid-gap: 10px;
+
+        grid-template-areas: 
+            'Article9h3'
+            'Article9P'
+            'Article9IMG';
+    }
+    .gridContainerHome article h1
+    {
+        font-family: "Rowdies", sans-serif;
+    }
+    .gridContainerHome article h3
+    {
+        font-family: "Rowdies", sans-serif;
+    }
+    .gridContainerHome article p
+    {
+        font-family: "Fredoka", sans-serif;
+    }
+    .gridContainerHome
+    {
+        padding: 20px;
+        display: grid;
+
+        grid-gap: 20px;
+        grid-template-areas:
+            'mainStartArticleTag'
+            'mainArticle1Tag'
+            'mainArticle2Tag'
+            'mainArticle3Tag'
+            'mainArticle4Tag'
+            'mainArticle5Tag'
+            'mainArticle6Tag'
+            'mainArticle7Tag'
+            'mainArticle8Tag'
+            'mainArticle9Tag';
+    } 
+    .Knop
+    {
+        background-color: #f05d23;
+        border: solid 4px #264653; 
+        font-size: 20px;
+        font-family: "Fredoka", sans-serif;
+        width: 30%;
+        padding: 5px;
+        color: #061826;
+        text-decoration: none;
+
+        border-top-left-radius: 5%;
+        border-bottom-left-radius: 5%;
+        border-top-right-radius: 5%;
+        border-bottom-right-radius: 5%;
+    }
+    .knop:hover
+    {
+        background-color: #f8cdbc;
+    }
+    .knop:visited
+    {
+        background-color: #F05D23;  
+    }
+
+    /* Contact page */
+    #HeroContact
+    {
+        border-bottom: solid 8px #cadbe7;
+    }
+    #HeroContact .HeroContactH1 {
+        position: absolute;
+        left: 50%;
+        transform: translateX(-50%);
+        color: #061826; 
+        text-align: center;
+        font-weight: bold;
+        font-family: "Rowdies", sans-serif;
+    }
+    .HeroContactH1 {
+        top: 25%;
+        font-size: 36px;
+        font-family: "Rowdies", sans-serif;
+    }    
+    #HeroContact > img
+    {
+        width: 100%;
+    }
+
+    #AsideContact > img
+    {
+        width: 65%;
+        margin: 20px;
+        grid-area: asideIMG;
+    }
+    #AsideContact > h3
+    {
+        grid-area: asideH3;
+        padding: 15px;
+        font-family: "Rowdies", sans-serif;
+    }
+    #AsideContact > #ContactP1
+    {
+        grid-area: asideP1;
+        width: 70%;
+    }
+    #AsideContact > #ContactP2
+    {
+        grid-area: asideP2;
+        width: 80%;
+        padding: 15px;
+    }
+    #AsideContact > #ContactP1,  #AsideContact > #ContactP2
+    {
+        font-family: "Fredoka", sans-serif;
+    }
+    #AsideContact
+    {
+        grid-area: asideContact;
+        background-color: #7ac2f4;
+        text-align: center;
+        padding: 15px;
+        margin: 10px;
+
+        border-top-left-radius: 7%;
+        border-bottom-left-radius: 7%;
+        border-top-right-radius: 7%;
+        border-bottom-right-radius: 7%;
+
+        display: grid;
+        justify-items: center;
+        grid-template-areas: 
+        'asideIMG'
+        'asideH3'
+        'asideP1'
+        'asideP2'; 
+    }
+    #aanhef
+    {
+        grid-area: formAanhef;
+        font-family: "Fredoka", sans-serif;
+    }
+    #aanhef > li
+    {
+        list-style: none;
+        font-family: "Fredoka", sans-serif;
+    }
+    #naam
+    {
+        grid-area: formNaam;
+        font-family: "Fredoka", sans-serif;
+    }
+    #naam2
+    {
+        grid-area: formNaam2;
+        font-family: "Fredoka", sans-serif;
+    }
+    #naam > label
+    {
+        grid-area: formNaam;
+        font-family: "Fredoka", sans-serif;
+    }
+    #achternaam
+    {
+        grid-area: formAchternaam;
+        font-family: "Fredoka", sans-serif;
+    }
+    #achternaam2
+    {
+        grid-area: formAchternaam2;
+        font-family: "Fredoka", sans-serif;
+    }
+    #website
+    {
+        grid-area: formWebsite;
+        font-family: "Fredoka", sans-serif;
+    }
+    #website2
+    {
+        grid-area: formWebsite2;
+        font-family: "Fredoka", sans-serif;
+    }
+    #telefoonnummer
+    {
+        grid-area: formTelefoonnummer;
+        font-family: "Fredoka", sans-serif;
+    }
+    #telefoonnummer2
+    {
+        grid-area: formTelefoonnummer2;
+        font-family: "Fredoka", sans-serif;
+    }
+    #vraag
+    {
+        grid-area: formVraag;
+        font-family: "Fredoka", sans-serif;
+    }
+    #vraag2
+    {
+        grid-area: formVraag2;
+        font-family: "Fredoka", sans-serif;
+    }
+    #verstuur
+    {
+        background-color: #F05D23;
+        border: solid 4px #264653; 
+        height: 120%;
+        grid-area: formVerstuur;
+        font-family: "Fredoka", sans-serif;
+    }
+    #ContactForm
+    {
+        padding: 15px;
+        background-color: #7ac2f4;
+        height: 100%;
+        border-top-left-radius: 5%;
+        border-bottom-left-radius: 5%;
+        border-top-right-radius: 5%;
+        border-bottom-right-radius: 5%;
+
+        grid-area: contactForm;
+        display: grid;
+        grid-gap: 10px;
+        grid-template-areas: 
+            'formAanhef         '
+            'formNaam           '
+            'formNaam2          '
+            'formAchternaam     '
+            'formAchternaam2    '
+            'formWebsite        '
+            'formWebsite2       '
+            'formTelefoonnummer '
+            'formTelefoonnummer2'
+            'formVraag          '
+            'formVraag2         '
+            'formVerstuur       ';
+    }
+    #ContactArticle
+    {
+        display: none;
+    }
+    #ContactGridContainer
+    {
+        display: grid;
+        grid-gap: 10px;
+        align-items: center;
+        grid-template-areas: 
+            'asideContact'
+            'contactForm'; 
+    }
+    /* Einde contact page */
+
+    /* Footer */
+    #FooterIMG1
+    {
+        grid-area: FooterIMG1;
+    }
+    #FooterP1
+    {
+        display: none;
+        font-family: "Fredoka", sans-serif;
+    }
+    #FooterP2
+    {
+        grid-area: FooterP2;
+        text-align: center;
+        position: absolute;
+        left: 35%;
+        bottom: 0px;
+        font-family: "Fredoka", sans-serif;
+    }
+    #FooterIMG2
+    {
+        grid-area: FooterIMG2;
+        text-align: right;
+        position: absolute;
+        bottom: 0px;
+        left: 20%;
+    }
+    footer
+    {
+        padding: 10px;
+        display: grid;
+        background-color: #cadbe7;
+        position: relative;
+
+        grid-gap: 10px;
+        grid-template-areas: 
+            'FooterIMG1    FooterIMG2   '
+            'FooterP2      FooterP2     ';
+    }
+    /* Einde footer ********/
+
+}
+
+
+
+/* --------------------------------------------------------------------------------------------------------------------------------------- */
+/* Media query, PC ------------------------------------------------------------------------------------------------------------------------*/
+@media screen and (min-width: 769px)
+{
+    *
+    {   
+        margin: 0;
+        padding: 0;
+        border: none;
+        box-sizing: border-box; /* Zorgt ervoor dat alles netjes in een box blijft en niet gaat overlappen */
+    } 
+
+    /* opmaak voor de body */
+    body
+    {
+        background-color: #E5E5E5;
+    }
+    body > a
+    {
+        display: block;
+        height: 30%;
+        width: 30%;
+    }
+    .current
+    {
+        background-color: #0B93F2;
+        border-top-left-radius: 15%;
+        border-bottom-left-radius: 15%;
+        border-top-right-radius: 15%;
+        border-bottom-right-radius: 15%;
+    }
+    .navBalkMobile a img
+    {
+        display: none;
+    }
+    nav > a > img 
+    {
+        width: 60px;
+        height: 60px;
+    }
+    nav
+    {
+        grid-area: navTag;
+    }
+    #menu-toggle
+    {
+        display: none;
+    }
+    /* navigatie menu */
+    nav > ul > li
+    {
+        text-align: center;
+        padding: 20px 0;
+        font-family: "Fredoka", sans-serif;
+    }
+    /* namen voor de gridbox van de navbalk */
+    .navBalkImg
+    {
+        grid-area: navIMG;
+        display: block;
+        
+    }
+    #navLinks
+    {
+        grid-area: navLink;
+        text-align: center;
+
+        align-content: space-around;
+    }
+    #li1
+    {
+        grid-area: li1;
+    }
+    #li2
+    {
+        grid-area: li2;
+    }
+    #li3
+    {
+        grid-area: li3;
+    }
+    #li4
+    {
+        grid-area: li4;
+    }
+    #li5
+    {
+        grid-area: li5;
+    }
+    #li6
+    {
+        grid-area: li6;
+        background-color: #F05D23;
+        border: solid 4px #264653; 
+        border-top-left-radius: 15%;
+        border-bottom-left-radius: 15%;
+        border-top-right-radius: 15%;
+        border-bottom-right-radius: 15%;
+    }
+    #navLinks
+    {
+        padding: 10px;
+        display: grid;
+        
+        grid-template-areas: 
+        'li1    li2     li3     li4     li5     li6     ';
+    }
+    .menu
+    {
+        background-color: #cadbe7;
+        color: black;
+        padding: 10px;
+        grid-gap: 10px;
+        display: grid;
+        
+        grid-template-areas: 
+        'navIMG     navLink     ';
+    }
+    .notCurrent
+    {
+        background-color: #7ac2f4;
+    }
+    /* Dit is allemaal uit als je op de pc versie gebruikt *********************************************/
+    .hamburger
+    {
+        display: none;
+    }
+    .hamburger span
+    {
+        display: none;
+    }
+    .menu ul
+    {
+        list-style-type: none;
+        padding: 0;
+        margin: 0;
+    }
+    .menu ul li
+    {
+        margin: 0px 0px 0px 8px;
+        border-top-left-radius: 15%;
+        border-bottom-left-radius: 15%;
+        border-top-right-radius: 15%;
+        border-bottom-right-radius: 15%;
+    }
+    .menu ul li a
+    {
+        color: black;
+        text-decoration: none;
+    }
+    #menu-toggle:checked ~ .menu
+    {
+        left: 0;
+        display: block;
+    }
+    /*Einde hamburger menu ********************************************************************************/
+
+    /* Position the text absolutely over the image */
+    #Header_Hero p {
+        position: absolute;
+        left: 50%;
+        transform: translateX(-50%);
+        color: #061826; 
+        text-align: center;
+        font-weight: bold;
+    }
+
+    /* Style for the first paragraph (title) */
+    .hero-title {
+        top: 60%;
+        font-size: 36px;
+        font-size: 45px;
+        font-family: "Rowdies", sans-serif;
+    }
+
+    /* Style for the second paragraph (subtitle) */
+    .hero-subtitle {
+        top: 70%;
+        font-size: 24px;
+        font-size: 35px;
+        font-family: "Rowdies", sans-serif;
+    }
+
+    /* Alle articellen in de main */  
+    main > article
+    {
+        text-align: center;
+        padding: 20px 0;
+        font-size: 30px;
+    }
+    #Header_Hero
+    {
+        grid-area: headerHero;
+        border-bottom: solid 8px #cadbe7;
+    }
+    #Header_Hero > img
+    {
+        width: 100%;
+        display: block;
+        filter: blur(6px);
+    }
+    main > article
+    {
+        border-top-left-radius: 6%;
+        border-bottom-left-radius: 6%;
+        border-top-right-radius: 6%;
+        border-bottom-right-radius: 6%; 
+    }
+    .homePage
+    {
+        background-color: #F2F2F2;
+        border: solid 6px #264653; 
+        padding: 10px;
+    }
+    #Main_StartArticle > h1
+    {
+        padding: 10px;
+        text-align: left;
+        font-size: 32px;
+        font-family: "Rowdies", sans-serif;
+        grid-area: Mainh1Tag;
+    }
+    #Main_StartArticle > p
+    {
+        padding: 10px;
+        text-align: left;
+        width: 90%;
+        font-size: 20px;
+        font-family: "Fredokka", sans-serif;
+    }
+    #MainP1
+    {
+        grid-area: MainP1;
+        letter-spacing: normal;
+        line-height: normal;
+        text-indent: 0px;
+    }
+    #MainP2
+    {
+        grid-area: MainP2;
+    }
+    #Main_StartArticle > img
+    {
+        width: 100%;
+        grid-area: MainIMGTag;
+    }
+    #Main_StartArticle
+    {
+        background-color: #4DB2F9;
+        padding: 1em;
+        grid-area: mainStartArticleTag;
+
+        display: grid;
+        grid-gap: 10px;
+        justify-content: center;
+
+        grid-template-areas: 
+            'MainIMGTag      Mainh1Tag    '
+            'MainIMGTag      MainP1     '
+            'MainIMGTag      MainP2     ';
+    }
+    /* Detail pages grid */
+    .startArticle > h3
+    {
+        font-size: 32px;
+        text-align: left;
+        grid-area: h3startTag;
+        font-family: "Rowdies", sans-serif;
+    }
+    .startArticle > p
+    {
+        font-size: 20px;
+        text-align: left;
+        width: 80%;
+        grid-area: PstartTag;
+        font-family: "Fredokka", sans-serif;
+    }
+    .startArticle > img
+    {
+        width: 80%;
+        grid-area: IMGstartTag;
+    }
+    .startArticle
+    {
+        padding: 1em;
+        grid-area: mainStartArticleTag;
+        border: none;
+    
+        display: grid;
+        grid-gap: 10px;
+        justify-content: center;
+    
+        grid-template-areas: 
+            'IMGstartTag      h3startTag    '
+            'IMGstartTag      PstartTag     '
+            'IMGstartTag      PstartTag     ';
+    }
+    main > article > img
+    {
+        border: solid 4px #cadbe7;
+    }
+    #article1
+    {
+        grid-area: article1Tag;
+        border: solid 4px #264653; 
+    }
+    #article2
+    {
+        grid-area: article2Tag;
+        border: solid 4px #264653; 
+    }
+    .canada > img
+    {
+        width: 75%;
+    }
+    #article3
+    {
+        grid-area: article3Tag;
+        border: solid 4px #264653; 
+    }
+    #article4
+    {
+        grid-area: article4Tag;
+        border: solid 4px #264653; 
+    }
+    .Mongolie > img
+    {
+        width: 95%;
+    }
+    .Mexico > img
+    {
+        width: 95%;
+    }
+    #article5
+    {
+        grid-area: article5Tag;
+        border: solid 4px #264653; 
+    }
+    #article6
+    {
+        grid-area: article6Tag;
+        border: solid 4px #264653; 
+    }
+    .cuba > img
+    {
+        width: 75%;
+    }
+    #article7
+    {
+        grid-area: article7Tag;
+        border: solid 4px #264653; 
+    }
+    #article8
+    {
+        grid-area: article8Tag;
+        border: solid 4px #264653; 
+    }
+    .Barbuda > img
+    {
+        width: 95%;
+    }
+    #article9
+    {
+        grid-area: article9Tag;
+        border: solid 4px #264653; 
+    }
+    #article10
+    {
+        grid-area: article10Tag;
+        border: solid 4px #264653; 
+    }
+    #article11
+    {
+        grid-area: article11Tag;
+        border: solid 4px #264653; 
+    }
+    #article12
+    {
+        grid-area: article12Tag;
+        border: solid 4px #264653; 
+    }
+    #article13
+    {
+        grid-area: article13Tag;
+        border: solid 4px #264653; 
+    }
+    #articleBuffer
+    {
+        grid-area: articleBuffer;
+    }
+    .gridContainerDetail > article
+    {
+        background-color: #4DB2F9;
+        border: solid 4px #264653; 
+    }
+    .gridContainerDetail > article > p
+    {
+        font-family: "Fredoka", sans-serif; 
+    }
+    .gridContainerDetail > article > h4
+    {
+        font-family: "Rowdies", sans-serif; 
+    }
+    .gridContainerDetail
+    {
+        padding: 10px;
+        display: grid;
+    
+        grid-gap: 20px;
+        grid-template-areas: 
+            'mainStartArticleTag         mainStartArticleTag          mainStartArticleTag        mainStartArticleTag    '
+            'article1Tag                 article2Tag                  article3Tag                article4Tag            '
+            'article5Tag                 article6Tag                  article7Tag                article8Tag            '
+            'article9Tag                 article10Tag                 article11Tag               article12Tag           '
+            'article13Tag                articleBuffer                articleBuffer             articleBuffer           ';
+    }
+    /* tussen article */
+    .tussenArticle > img
+    {
+        grid-area: tussenIMGTag;
+    }
+    .tussenArticle > h3
+    {
+        grid-area: tussenH3Tag;
+        font-size: 32px;
+    }
+    .tussenArticle > p
+    {
+        grid-area: tussenPTag;
+        width: 85%;
+        padding: 10px;
+    }
+    .tussenArticle
+    {
+        background-color: #4DB2F9;
+        padding: 1em;
+        text-align: left; 
+        font-size: 20px;
+            
+        grid-area: tussenArticleTag;
+        display: grid;
+        grid-gap: 10px;
+        grid-template-areas: 
+            'tussenIMGTag      tussenH3Tag    '
+            'tussenIMGTag      tussenPTag     '; 
+    }
+    #article14
+    {
+        grid-area: article14Tag;
+        border: solid 4px #264653; 
+    }
+    .Ecuador > img
+    {
+        width: 95%;
+    }
+    #article15
+    {
+        grid-area: article15Tag;
+        border: solid 4px #264653; 
+    }
+    #article16
+    {
+        grid-area: article16Tag;
+        border: solid 4px #264653; 
+    }
+    #article17
+    {
+        grid-area: article17Tag;
+        border: solid 4px #264653; 
+    }
+    #article18
+    {
+        grid-area: article18Tag;
+        border: solid 4px #264653; 
+    }
+    .Suriname > img
+    {
+        width: 95%;
+    }
+    #article19
+    {
+        grid-area: article19Tag;
+        border: solid 4px #264653; 
+    }
+    #article20
+    {
+        grid-area: article20Tag;
+        border: solid 4px #264653; 
+    }
+    #articleBuffer2
+    {
+        grid-area: articleBuffer;
+    }
+    /* Voor de azie oceanie page */
+    .gridContainerDetail3 > article
+    {
+        background-color: #4DB2F9;
+    }
+    .gridContainerDetail3 > article > p
+    {
+        font-family: "Fredoka", sans-serif; 
+    }
+    .gridContainerDetail3 > article > h4
+    {
+        font-family: "Rowdies", sans-serif; 
+    }
+    .gridContainerDetail3
+    {
+        padding: 10px;
+        display: grid;
+    
+        grid-gap: 20px;
+        grid-template-areas: 
+            'mainStartArticleTag         mainStartArticleTag          mainStartArticleTag        mainStartArticleTag    '
+            'article1Tag                 article2Tag                  article3Tag                article4Tag            '
+            'article5Tag                 article6Tag                  article7Tag                article8Tag            '
+            'article9Tag                 article10Tag                 article11Tag               article12Tag           '
+            'tussenArticleTag            tussenArticleTag             tussenArticleTag           tussenArticleTag       '
+            'article13Tag                article14Tag                 article15Tag               article16Tag           ';
+    }
+    /* Dit is voor Amerika page */
+    .gridContainerDetail2 > article
+    {
+        background-color: #4DB2F9;
+    }
+    .gridContainerDetail2 > article > p
+    {
+        font-family: "Fredoka", sans-serif; 
+    }
+    .gridContainerDetail2 > article > h4
+    {
+        font-family: "Rowdies", sans-serif; 
+    }
+    .gridContainerDetail2
+    {
+        padding: 10px;
+        display: grid;
+    
+        grid-gap: 20px;
+        grid-template-areas: 
+            'mainStartArticleTag         mainStartArticleTag          mainStartArticleTag        mainStartArticleTag     '
+            'article1Tag                 article2Tag                  article3Tag                article4Tag             '
+            'article5Tag                 article6Tag                  article7Tag                article8Tag             '
+            'article9Tag                 article10Tag                 articleBuffer              articleBuffer           '
+            'tussenArticleTag            tussenArticleTag             tussenArticleTag           tussenArticleTag        '
+            'article11Tag                article12Tag                 article13Tag               article14Tag            '
+            'article15Tag                article16Tag                 article17Tag               article18Tag            '
+            'article19Tag                article20Tag                 articleBuffer2             articleBuffer2          ';
+    }
+    #Main_Article2
+    {
+        padding: 1em;
+        grid-area: mainArticle2Tag;
+    }
+    /* article 3 */
+    #Main_Article3
+    {
+        padding: 1em;
+        grid-area: mainArticle3Tag;
+    }
+    /* Article 4 */
+    #Main_Article4 > img
+    {
+        grid-area: Article4IMG;
+        position: relative;
+        top: 15px;
+    }
+    #Main_Article4 > h3
+    {
+        grid-area: Article4h3;
+        font-size: 32px;
+    }
+    #Main_Article4 > p
+    {
+        grid-area: Article4P;
+        width: 85%;
+        padding: 10px;
+    }
+    #Main_Article4
+    {
+        background-color: #4DB2F9;
+        padding: 1em;
+        text-align: left; 
+        font-size: 20px;
+        
+        grid-area: mainArticle4Tag;
+        display: grid;
+        grid-gap: 10px;
+
+        grid-template-areas: 
+            'Article4h3      Article4IMG    '
+            'Article4P       Article4IMG     '; 
+    }
+    #Main_Article5
+    {
+        padding: 1em;
+        grid-area: mainArticle5Tag;
+    }
+    #Main_Article6
+    {
+        padding: 1em;
+        grid-area: mainArticle6Tag;
+    }
+    #Main_Article7
+    {
+        padding: 1em;
+        grid-area: mainArticle7Tag;
+    }
+    /* Article 8 */
+    #Main_Article8 > img
+    {
+            grid-area: Article8IMG;
+            position: relative;
+            top: 15px;
+    }
+    #Main_Article8 > h3
+    {
+            grid-area: Article8h3;
+            font-size: 32px;
+            text-align: left;
+    }
+    #Main_Article8 > p
+    {
+        grid-area: Article8P;
+        padding: 10px;
+        text-align: left;
+        font-size: 20px;
+        width: 80%;
+    }
+    #Main_Article8
+    {
+        background-color: #4DB2F9;
+        padding: 1em;
+        grid-area: mainArticle8Tag;
+
+        display: grid;
+        grid-gap: 10px;
+
+        grid-template-areas: 
+            'Article8IMG      Article8h3    '
+            'Article8IMG      Article8P    '; 
+    }
+    /* Article 9 */
+    #Main_Article9 > img
+    {
+        grid-area: Article9IMG;
+        position: relative;
+        top: 15px;
+    }
+    #Main_Article9 > h3
+    {
+        grid-area: Article9h3;
+        font-size: 32px;
+        text-align: left;
+
+    }
+    #Main_Article9 > #Article9P
+    {
+        grid-area: Article9P;
+        padding: 10px;
+        text-align: left;
+        font-size: 20px;
+        width: 80%;
+    }
+    #Main_Article9
+    {
+        background-color: #4DB2F9;
+        padding: 1em;
+
+        grid-area: mainArticle9Tag;
+        display: grid;
+        grid-gap: 10px;
+
+        grid-template-areas: 
+            'Article9h3      Article9IMG    '
+            'Article9P       Article9IMG    '; 
+    }
+    main > article > h1, main > article > h3
+    {
+        font-family: "Rowdies", sans-serif; 
+    }
+    main > article > p
+    {
+        font-family: "Fredoka", sans-serif; 
+    }
+    .gridContainerHome
+    {
+        padding: 20px;
+        display: grid;
+
+        grid-gap: 20px;
+        grid-template-areas: 
+            'mainStartArticleTag      mainStartArticleTag       mainStartArticleTag    '
+            'mainArticle1Tag          mainArticle2Tag           mainArticle3Tag    '
+            'mainArticle4Tag          mainArticle4Tag           mainArticle4Tag    '
+            'mainArticle5Tag          mainArticle6Tag           mainArticle7Tag'
+            'mainArticle8Tag          mainArticle8Tag           mainArticle8Tag'
+            'mainArticle9Tag          mainArticle9Tag           mainArticle9Tag';
+    } 
+    .Knop
+    {
+        background-color: #f05d23;
+        border: solid 4px #264653; 
+        font-family: "Fredoka", sans-serif;
+        font-size: 20px;
+        padding: 5px;
+        color: #061826;
+        text-decoration: none;
+
+        border-top-left-radius: 5%;
+        border-bottom-left-radius: 5%;
+        border-top-right-radius: 5%;
+        border-bottom-right-radius: 5%;
+    }
+    .knop:hover
+    {
+        background-color: #f8cdbc;
+    }
+    .knop:visited
+    {
+        background-color: #F05D23;  
+    }
+
+    /* Contact Pagina ***********************************/
+    #HeroContact
+    {
+        border-bottom: solid 8px #cadbe7;
+    }
+    #HeroContact .HeroContactH1 {
+        position: absolute;
+        left: 50%;
+        transform: translateX(-50%);
+        color: #061826; 
+        text-align: center;
+        font-weight: bold;
+    }
+    .HeroContactH1 {
+        top: 60%;
+        font-size: 36px;
+        font-family: "Rowdies", sans-serif;
+    }    
+    #HeroContact > img
+    {
+        width: 100%;
+        filter: blur(4px);
+    }
+
+    #AsideContact > img
+    {
+        width: 65%;
+        margin: 20px;
+        grid-area: asideIMG;
+    }
+    #AsideContact > h3
+    {
+        grid-area: asideH3;
+        font-size: 36px;
+        padding: 15px;
+        font-family: "Rowdies", sans-serif;
+    }
+    #AsideContact > #ContactP1
+    {
+        grid-area: asideP1;
+        width: 70%;
+        font-family: "Fredoka", sans-serif;
+    }
+    #AsideContact > #ContactP2
+    {
+        grid-area: asideP2;
+        width: 80%;
+        padding: 15px;
+        font-family: "Fredoka", sans-serif;
+    }
+    #AsideContact
+    {
+        grid-area: asideContact;
+        background-color: #7ac2f4;
+        text-align: center;
+        padding: 15px;
+        margin: 10px;
+
+        border-top-left-radius: 7%;
+        border-bottom-left-radius: 7%;
+        border-top-right-radius: 7%;
+        border-bottom-right-radius: 7%;
+
+        display: grid;
+        justify-items: center;
+        grid-template-areas: 
+        'asideIMG'
+        'asideH3'
+        'asideP1'
+        'asideP2'; 
+    }
+    #aanhef
+    {
+        grid-area: formAanhef;
+        font-family: "Fredoka", sans-serif;
+    }
+    #aanhef > li
+    {
+        list-style: none;
+        font-family: "Fredoka", sans-serif;
+    }
+    #naam
+    {
+        grid-area: formNaam;
+        font-family: "Fredoka", sans-serif;
+    }
+    #naam2
+    {
+        grid-area: formNaam2;
+        font-family: "Fredoka", sans-serif;
+    }
+    #naam > label
+    {
+        grid-area: formNaam;
+        font-family: "Fredoka", sans-serif;
+    }
+    #achternaam
+    {
+        grid-area: formAchternaam;
+        font-family: "Fredoka", sans-serif;
+    }
+    #achternaam2
+    {
+        grid-area: formAchternaam2;
+        font-family: "Fredoka", sans-serif;
+    }
+    #website
+    {
+        grid-area: formWebsite;
+        font-family: "Fredoka", sans-serif;
+    }
+    #website2
+    {
+        grid-area: formWebsite2;
+        font-family: "Fredoka", sans-serif;
+    }
+    #telefoonnummer
+    {
+        grid-area: formTelefoonnummer;
+        font-family: "Fredoka", sans-serif;
+    }
+    #telefoonnummer2
+    {
+        grid-area: formTelefoonnummer2;
+        font-family: "Fredoka", sans-serif;
+    }
+    #vraag
+    {
+        grid-area: formVraag;
+        font-family: "Fredoka", sans-serif;
+    }
+    #vraag2
+    {
+        grid-area: formVraag2;
+        font-family: "Fredoka", sans-serif;
+    }
+    #verstuur
+    {
+        background-color: #F05D23;
+        border: solid 4px #264653; 
+        grid-area: formVerstuur;
+    }
+    #ContactForm
+    {
+        padding: 15px;
+        background-color: #7ac2f4;
+        height: 90%;
+        border-top-left-radius: 7%;
+        border-bottom-left-radius: 7%;
+        border-top-right-radius: 7%;
+        border-bottom-right-radius: 7%;
+
+        grid-area: contactForm;
+        display: grid;
+        grid-gap: 10px;
+        grid-template-areas: 
+            'formAanhef         '
+            'formNaam           '
+            'formNaam2          '
+            'formAchternaam     '
+            'formAchternaam2    '
+            'formWebsite        '
+            'formWebsite2       '
+            'formTelefoonnummer '
+            'formTelefoonnummer2'
+            'formVraag          '
+            'formVraag2         '
+            'formVerstuur       ';
+    }
+    #ContactArticle > img
+    {
+        width: 75%;
+        margin: 25px;
+        border: solid 4px #7ac2f4;
+    }
+    #ContactArticle
+    {
+        grid-area: contactArticle;
+        display: grid;
+        justify-items: center;
+    }
+    #ContactGridContainer
+    {
+        display: grid;
+        grid-gap: 10%;
+        align-items: center;
+        grid-template-areas: 
+            'asideContact   contactForm     contactArticle'; 
+    }
+    /* Einde contact Pagina ***********************************/
+
+    /* Footer ****************************/
+    #FooterIMG1
+    {
+        grid-area: FooterIMG1;
+    }
+    #FooterP1
+    {
+        grid-area: FooterP1;
+        font-family: "Fredoka", sans-serif;
+    }
+    #FooterP2
+    {
+        grid-area: FooterP2;
+        text-align: center;
+        position: absolute;
+        bottom: 0px;
+        font-family: "Fredoka", sans-serif;
+    }
+    #FooterIMG2
+    {
+        grid-area: FooterIMG2;
+        text-align: right;
+        position: absolute;
+        bottom: 0px;
+        left: 20%;
+    }
+    footer
+    {
+        padding: 10px;
+        display: grid;
+        background-color: #cadbe7;
+        position: relative;
+
+        grid-gap: 10px;
+        grid-template-areas: 
+            'FooterIMG1    FooterP2       FooterIMG2    '
+            'FooterP1      FooterP2       FooterIMG2    ';
+    }
+    /* Einde footer ********/
+}
+
