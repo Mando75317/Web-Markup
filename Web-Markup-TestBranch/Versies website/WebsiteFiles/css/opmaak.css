@@ -25,12 +25,21 @@
         background-color: #CADBE7;
         height: 50px;
     }
+    .hidden
+    {
+        display: none;
+    }
+    #hidden
+    {
+        display: none;
+    }
     .navBalkMobile a
     {
         text-decoration: none;
     }
     .navBalkMobile a img
     {
+        float: none;
         width: 7%;
         padding: 10px;
         position: relative;
@@ -116,7 +125,7 @@
     /* Einde hamburger menu */
 
     /* Hero */
-    #Header_Hero > p
+    #Header_Hero > h1
     {
         position: absolute;
         left: 50%;
@@ -180,14 +189,17 @@
     main Article h1
     {
         font-family: "Rowdies", sans-serif;
+        word-spacing: normal;
     }
     main Article h3
     {
         font-family: "Rowdies", sans-serif;
+        word-spacing: normal;
     }
     main Article p
     {
         font-family: "Fredoka", sans-serif;
+        word-spacing: normal;
     }
     #Main_Article1
     {
@@ -298,6 +310,7 @@
         border-bottom-left-radius: 5%;
         border-top-right-radius: 5%;
         border-bottom-right-radius: 5%;
+        word-spacing: normal;
     }
     main > article > img
     {
@@ -382,6 +395,10 @@
         border: solid 4px #264653; 
     }
     #articleBuffer
+    {
+        display: none;
+    }
+    #articleBuffer h6
     {
         display: none;
     }
@@ -495,6 +512,10 @@
         border: solid 4px #264653; 
     }
     #articleBuffer2
+    {
+        display: none;
+    }
+    #articleBuffer2 h6
     {
         display: none;
     }
@@ -760,11 +781,11 @@
     }
     .knop:hover
     {
-        background-color: #f8cdbc;
+        background-color: #ed906c;
     }
     .knop:visited
     {
-        background-color: #F05D23;  
+        background-color: #b84f26;  
     }
 
     /* Contact page */
@@ -943,6 +964,10 @@
     {
         display: none;
     }
+    #ContactArticle h6
+    {
+        display: none;
+    }
     #ContactGridContainer
     {
         display: grid;
@@ -1031,6 +1056,14 @@
         border-bottom-right-radius: 15%;
     }
     .navBalkMobile a img
+    {
+        display: none;
+    }
+    .hidden
+    {
+        display: none;
+    }
+    #hidden
     {
         display: none;
     }
@@ -1157,19 +1190,19 @@
     /*Einde hamburger menu ********************************************************************************/
 
     /* Position the text absolutely over the image */
-    #Header_Hero p {
+    #Header_Hero h1 {
         position: absolute;
         left: 50%;
         transform: translateX(-50%);
         color: #061826; 
         text-align: center;
         font-weight: bold;
+        word-spacing: normal;
     }
 
     /* Style for the first paragraph (title) */
     .hero-title {
         top: 60%;
-        font-size: 36px;
         font-size: 45px;
         font-family: "Rowdies", sans-serif;
     }
@@ -1177,7 +1210,6 @@
     /* Style for the second paragraph (subtitle) */
     .hero-subtitle {
         top: 70%;
-        font-size: 24px;
         font-size: 35px;
         font-family: "Rowdies", sans-serif;
     }
@@ -1205,7 +1237,8 @@
         border-top-left-radius: 6%;
         border-bottom-left-radius: 6%;
         border-top-right-radius: 6%;
-        border-bottom-right-radius: 6%; 
+        border-bottom-right-radius: 6%;
+        word-spacing: normal; 
     }
     .homePage
     {
@@ -1227,6 +1260,7 @@
         text-align: left;
         width: 90%;
         font-size: 20px;
+        word-spacing: normal;
         font-family: "Fredokka", sans-serif;
     }
     #MainP1
@@ -1268,12 +1302,18 @@
         grid-area: h3startTag;
         font-family: "Rowdies", sans-serif;
     }
+    .startArticle > h3::first-letter
+    {
+        font-size: 100%;
+        font-weight: normal;
+    }
     .startArticle > p
     {
         font-size: 20px;
         text-align: left;
         width: 80%;
         grid-area: PstartTag;
+        word-spacing: normal;
         font-family: "Fredokka", sans-serif;
     }
     .startArticle > img
@@ -1299,6 +1339,7 @@
     main > article > img
     {
         border: solid 4px #cadbe7;
+        float: initial;
     }
     #article1
     {
@@ -1388,6 +1429,14 @@
     #articleBuffer
     {
         grid-area: articleBuffer;
+    }
+    #articleBuffer h6
+    {
+        display: none;
+    }
+    #articleBuffer2 h6
+    {
+        display: none;
     }
     .gridContainerDetail > article
     {
@@ -1715,11 +1764,15 @@
     }
     .knop:hover
     {
-        background-color: #f8cdbc;
+        color: #f8cdbc;
     }
     .knop:visited
     {
-        background-color: #F05D23;  
+        color: #F05D23;  
+    }
+    .Knop:active
+    {
+        color: #f8cdbc;
     }
 
     /* Contact Pagina ***********************************/
@@ -1792,6 +1845,10 @@
         'asideH3'
         'asideP1'
         'asideP2'; 
+    }
+    #legend
+    {
+        display: none;
     }
     #aanhef
     {
@@ -1866,7 +1923,7 @@
     }
     #ContactForm
     {
-        padding: 15px;
+        padding: 30px;
         background-color: #7ac2f4;
         height: 90%;
         border-top-left-radius: 7%;
@@ -1903,6 +1960,10 @@
         display: grid;
         justify-items: center;
     }
+    #ContactArticle h6
+    {
+        display: none;
+    }
     #ContactGridContainer
     {
         display: grid;
@@ -1912,6 +1973,23 @@
             'asideContact   contactForm     contactArticle'; 
     }
     /* Einde contact Pagina ***********************************/
+
+    /* cookies */
+    .cookieMessage
+    {
+        background-color: #7ac2f4;
+        /* margin: 5px; */
+        padding: 1%;
+        text-align: center;
+        position: relative;
+        z-index: 9999;
+        border: solid 4px #F05D23;
+    }
+    .cookieMessage > p
+    {
+        font-family: "Fredoka", sans-serif;
+    }
+    /* einde cookies */
 
     /* Footer ****************************/
     #FooterIMG1

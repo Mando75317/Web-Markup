@@ -1,21 +1,22 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="nl">
     <head>
         <meta charset="UTF-8">
 
-        <meta name="Keywords" content="Reisstekkers, Reisigers, Informatie, Stekkers, Handig"/>
-        <meta name="description" content="Vindt hier de reisstekker die jij nodig heb voor je reis."/>
-        <link rel="stylesheet" href="css/opmaak.css" type="text.css"/>
-
-        <meta name="author" content="Bas Raadsveld"/>
-
         <title>StekkerGids Home</title>
+        <meta name="keywords" content="Reisstekkers, Reisigers, Informatie, Stekkers, Handig"/>
+        <meta name="description" content="Vindt hier de reisstekker die jij nodig heb voor je reis."/>
+        <link rel="stylesheet" type="text/css" href="css/opmaak.css">
+        <link rel="icon" type="image/jpg" href="img/Logo_zwartWit.jpg">
+        <meta name="author" content="Bas Raadsveld"/>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
     </head>
 
     <body>
         <input type="checkbox" id="menu-toggle">
         <section class="navBalkMobile"><!-- voor de navbalk op mobile -->
-            <a href="../Website_Reisstekkers_v1/index.html" class="navBalkImg">    
+            <h2 id="hidden">verstopt</h2>
+            <a href="index.html" class="navBalkImg">    
                 <img src="img/Logo_Kleur.png" alt="Hero_image" title="Hero van de website met twee stekker op de afbeelding.">
             </a>
             <label for="menu-toggle" class="hamburger">
@@ -28,7 +29,7 @@
 
         <!--this the the menu that will show when clicked-->
         <nav class="menu">
-            <a href="../Website_Reisstekkers_v1/index.html" class="navBalkImg">    
+            <a href="index.html" class="navBalkImg">    
                 <img src="img/Logo_Kleur.png" alt="Hero_image" title="Hero van de website met twee stekker op de afbeelding.">
             </a>
             <ul id="navLinks">
@@ -41,21 +42,20 @@
             </ul>
         </nav>
 
-
         <header id="Header_Hero">
             <!-- Hero img -->
             <img src="img/worldMap.png"  title="Afbeelding van " alt="header img"/> <!-- de slash achter de img is belankgrijk -->
             <!-- Hero text in h1 -->
-            <p class="hero-title">StekkerGids</p>
-            <p class="hero-subtitle">Door de wereld heen</p>
+            <h1 class="hero-title">StekkerGids</h1>
+            <h1 class="hero-subtitle">Door de wereld heen</h1>
         </header>
 
         <main class="gridContainerHome">
             <article id="Main_StartArticle">
                 <!-- Info article -->
-                <h1>
+                <h3>
                     Wat is een reisstekker&#63;
-                </h1>
+                </h3    >
                 <p id="MainP1">
                     Als je opreis gaat dan is het altijd handig om te controleren of de Nederlandse stekkers in de stopcontacten kunnen.
                 </p>
@@ -79,8 +79,8 @@
                 <p id="Article1P">
                     Zie welke landen deze type stopcontacten gebruiken. 
                 </p>
-                <a href="../Website_Reisstekkers_v1/europa.html" class="Knop">Europa</a>
-                <a href="../Website_Reisstekkers_v1/afrika.html" class="Knop">Afrika</a>
+                <a href="europa.html" class="Knop">Europa</a>
+                <a href="afrika.html" class="Knop">Afrika</a>
             </article>
 
             <article id="Main_Article2" class="homePage">
@@ -93,7 +93,7 @@
                 <p>
                     Zie welke landen deze type stopcontacten gebruiken. 
                 </p>
-                <a href="../Website_Reisstekkers_v1/europa.html" class="Knop">Europa</a>
+                <a href="europa.html" class="Knop">Europa</a>
             </article>
 
             <article id="Main_Article3" class="homePage">
@@ -106,8 +106,8 @@
                 <p>
                     Zie welke landen deze type stopcontacten gebruiken. 
                 </p>
-                <a href="../Website_Reisstekkers_v1/europa.html" class="Knop">Europa</a>
-                <a href="../Website_Reisstekkers_v1/azieoceanie.html" class="Knop">Azië</a>
+                <a href="europa.html" class="Knop">Europa</a>
+                <a href="azieoceanie.html" class="Knop">Azië</a>
 
             </article>
 
@@ -137,7 +137,7 @@
                 <p>
                     Zie welke landen deze type stopcontacten gebruiken. 
                 </p>
-                <a href="../Website_Reisstekkers_v1/amerika.html" class="Knop">Noord-Amerika</a>
+                <a href="amerika.html" class="Knop">Noord-Amerika</a>
             </article>
 
             <article id="Main_Article6" class="homePage">
@@ -150,7 +150,7 @@
                 <p>
                     Zie welke landen deze type stopcontacten gebruiken. 
                 </p>
-                <a href="../Website_Reisstekkers_v1/amerika.html" class="Knop">Noord-Amerika</a>
+                <a href="amerika.html" class="Knop">Noord-Amerika</a>
             </article>
 
             <article id="Main_Article7" class="homePage">
@@ -163,7 +163,7 @@
                 <p>
                     Zie welke landen deze type stopcontacten gebruiken. 
                 </p>
-                <a href="../Website_Reisstekkers_v1/azieoceanie.html" class="Knop">Oceanië</a>
+                <a href="azieoceanie.html" class="Knop">Oceanië</a>
             </article>
 
             <article id="Main_Article8">
@@ -194,6 +194,10 @@
                 <a href="https://www.anwb.nl/webwinkel/zoeken?q=reisstekkers&sortering=nieuwe+collectie" class="Knop">Ga naar ANWB site</a>
             </article>
         </main>
+
+        <aside class="cookieMessage">
+            <p>Sommige functies zijn niet mogelijk zonder cookies te accepteren.</p>
+        </aside>
 
         <footer>
             <!-- Links -->

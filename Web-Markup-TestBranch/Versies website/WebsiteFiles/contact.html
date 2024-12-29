@@ -1,21 +1,22 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="nl">
 <head>
     <meta charset="UTF-8">
 
-    <meta name="Keywords" content="Reisstekkers, Reisigers, Informatie, Stekkers, Handig, Contact"/>
-    <meta name="description" content="Zoek hier contact met het bedrijf"/>
-    <link rel="stylesheet" href="css/opmaak.css" type="text.css"/>
-
+    <title>StekkerGids Home</title>
+    <meta name="keywords" content="Reisstekkers, Reisigers, Informatie, Stekkers, Handig"/>
+    <meta name="description" content="Vindt hier de reisstekker die jij nodig heb voor je reis."/>
+    <link rel="stylesheet" type="text/css" href="css/opmaak.css">
+    <link rel="icon" type="image/jpg" href="img/Logo_zwartWit.jpg">
     <meta name="author" content="Bas Raadsveld"/>
-
-    <title>StekkerGids Contact</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
 </head>
 
 <body>
     <input type="checkbox" id="menu-toggle">
     <section class="navBalkMobile"><!-- voor de navbalk op mobile -->
-        <a href="../Website_Reisstekkers_v1/index.html" class="navBalkImg">    
+        <h6 class="hidden">verborgen</h6>
+        <a href="index.html" class="navBalkImg">    
             <img src="img/Logo_Kleur.png" alt="Hero_image" title="Hero van de website, met twee stekker op de afbeelding.">
         </a>
         <label for="menu-toggle" class="hamburger">
@@ -28,7 +29,7 @@
 
     <!--this the the menu that will show when clicked-->
     <nav class="menu">
-        <a href="../Website_Reisstekkers_v1/index.html" class="navBalkImg">    
+        <a href="index.html" class="navBalkImg">    
             <img src="img/Logo_Kleur.png" alt="Hero_image" title="Hero van de website, met twee stekker op de afbeelding.">
         </a>
         <ul id="navLinks">
@@ -64,49 +65,54 @@
             id="ContactForm"
             >
             
-            <ul id="aanhef">
-                <li>
-                    <label for="aanhef">Aanhef*</label>
-                </li>
-                <li>
-                    <select name="aanhef">
-                        <option value="geen">geen</option>
-                        <option value="dhr">Dhr.</option>
-                        <option value="mevr">Mevr.</option>
-                    </select>
-                </li>
-            </ul>
+            <fieldset id="group">
 
-            <label for="naam" id="naam">
-                Voornaam*
-            </label>
-            <input type="text" placeholder="Vul hier je naam in" name="Name" id="naam2"/>
-            
-            <label for="achternaam" id="achternaam">
-                Achternaam
-            </label>
-            <input type="text" placeholder="Vul hier je achternaam in" name="email" id="achternaam2"/>
+                <Legend id="legend">Form</Legend>
+                <ul id="aanhef">
+                    <li>
+                        <label for="aanhef2">Aanhef*</label>
+                    </li>
+                    <li>
+                        <select name="aanhef" id="aanhef2">
+                            <option value="geen">geen</option>
+                            <option value="dhr">Dhr.</option>
+                            <option value="mevr">Mevr.</option>
+                        </select>
+                    </li>
+                </ul>
 
-            <label for="email" id="email">
-                Email*
-            </label>
-            <input type="email" placeholder="voorbeeld@gmail.com" name="website" id="website2"/>
+                <label for="naam2" id="naam">
+                    Voornaam*
+                </label>
+                <input type="text" placeholder="Vul hier je naam in" name="Name" id="naam2"/>
+                
+                <label for="achternaam2" id="achternaam">
+                    Achternaam
+                </label>
+                <input type="text" placeholder="Vul hier je achternaam in" name="email" id="achternaam2"/>
 
-            <label for="telefoonnummer" id="telefoonnummer">
-                telefoonnummer
-            </label>
-            <input type="number" placeholder="06-12345678" name="nummer" id="telefoonnummer2"/>
+                <label for="website2" id="email">
+                    Email*
+                </label>
+                <input type="email" placeholder="voorbeeld@gmail.com" name="website" id="website2"/>
 
-            <label for="vraag" id="vraag">
-                Vraag*
-            </label>
-            <input type="text" placeholder="Stel je vraag" name="vraag" id="vraag2"/>
+                <label for="telefoonnummer2" id="telefoonnummer">
+                    telefoonnummer
+                </label>
+                <input type="number" placeholder="06 12345678" name="nummer" id="telefoonnummer2"/>
 
-            <input type="submit" value="Verstuur" id="verstuur">
+                <label for="vraag2" id="vraag">
+                    Vraag*
+                </label>
+                <input type="text" placeholder="Stel je vraag" name="vraag" id="vraag2"/>
+
+                <input type="submit" value="Verstuur" id="verstuur">
+            </fieldset>
         </form>
 
         <!-- Links van het formulier -->
         <article id="ContactArticle">
+            <h6>Contact</h6>
             <img src="img/ConctactVerticaal.jpg"  title="ContactAfbeelding" alt="Afbeelding met vraagtekens, een brief en een vinkje"/>
         </article>
     </main>
