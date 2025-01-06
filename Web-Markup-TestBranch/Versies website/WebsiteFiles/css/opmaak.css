@@ -1,6 +1,6 @@
 /* font */
-@import url('https://fonts.googleapis.com/css2?family=Rowdies:wght@300;400;700&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Fredoka:wght@300..700&family=Rowdies:wght@300;400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Fredoka:wght@300..700&family=Rowdies&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Fredoka:wght@300..700&family=Rowdies&display=swap');
 
 /* Media query, MOBILE */
 @media screen and (max-width: 768px)
@@ -133,6 +133,10 @@
         color: #061826; 
         text-align: center;
         font-weight: bold;
+    }
+    #Header_Hero h1 strong
+    {
+        font-family: "Rowdies", sans-serif;
     }
     .hero-title
     {
@@ -933,7 +937,11 @@
         grid-area: formVerstuur;
         font-family: "Fredoka", sans-serif;
     }
-    #ContactForm
+    #group legend
+    {
+        display: none;
+    }
+    #group
     {
         padding: 15px;
         background-color: #7ac2f4;
@@ -1921,7 +1929,7 @@
         border: solid 4px #264653; 
         grid-area: formVerstuur;
     }
-    #ContactForm
+    #group
     {
         padding: 30px;
         background-color: #7ac2f4;
