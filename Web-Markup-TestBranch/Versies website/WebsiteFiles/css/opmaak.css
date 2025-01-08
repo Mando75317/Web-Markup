@@ -2,18 +2,18 @@
 @import url('https://fonts.googleapis.com/css2?family=Fredoka:wght@300..700&family=Rowdies&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Fredoka:wght@300..700&family=Rowdies&display=swap');
 
+*
+{   
+    margin: 0;
+    padding: 0;
+    border: none;
+    box-sizing: border-box; /* Zorgt ervoor dat alles netjes in een box blijft en niet gaat overlappen */
+} 
+
+
 /* Media query, MOBILE */
 @media screen and (max-width: 768px)
 {
-    /* style voor alle elementen */
-    *
-    {   
-        margin: 0;
-        padding: 0;
-        border: none;
-        box-sizing: border-box; /* Zorgt ervoor dat alles netjes in een box blijft en niet gaat overlappen */
-    } 
-
     /* opmaak voor de body */
     body
     {
@@ -67,6 +67,8 @@
         margin: 5px;
         cursor: pointer;
         right: 45px;
+        z-index: 2;
+        top: calc((-50px + 30px)/2);
     }
     .hamburger span
     {
@@ -107,6 +109,7 @@
         list-style-type: none;
         padding: 0;
         margin: 0;
+        padding-top: 50px;
     }
     .menu ul li
     {
@@ -121,6 +124,7 @@
     {
         left: 0;
         display: block;
+        z-index: 1;
     }
     /* Einde hamburger menu */
 
@@ -157,6 +161,7 @@
     #Header_Hero > img
     {
         width: 100%;
+        filter: blur(6px);
         display: block;
     }
     #Header_Hero
@@ -1036,14 +1041,6 @@
 /* Media query, PC ------------------------------------------------------------------------------------------------------------------------*/
 @media screen and (min-width: 769px)
 {
-    *
-    {   
-        margin: 0;
-        padding: 0;
-        border: none;
-        box-sizing: border-box; /* Zorgt ervoor dat alles netjes in een box blijft en niet gaat overlappen */
-    } 
-
     /* opmaak voor de body */
     body
     {
@@ -1176,6 +1173,7 @@
         list-style-type: none;
         padding: 0;
         margin: 0;
+        
     }
     .menu ul li
     {
